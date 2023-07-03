@@ -1,0 +1,442 @@
+.line {
+    height: 5px;
+    background-color: #0078ff;
+    width: 40px;
+    bottom: 10px;
+    margin: auto;
+}
+
+header {
+    background-image: url(./img/hero-bg.jpg);
+    min-height: 100dvh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1::after {
+    font-size: 3rem;
+    content: " |";
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes typing {
+    0% {
+        content: "D|"
+    }
+
+    3% {
+        content: "De|"
+    }
+
+    6% {
+        content: "Dev|"
+    }
+
+    9% {
+        content: "Deve|"
+    }
+
+    12% {
+        content: "Devel|"
+    }
+
+    15% {
+        content: "Develo|"
+    }
+
+    18% {
+        content: "Develop|"
+    }
+
+    21% {
+        content: "Develope|"
+    }
+
+    24% {
+        content: "Devoloper|"
+    }
+
+    27% {
+        content: "De|"
+    }
+
+    30% {
+        content: "Des|"
+    }
+
+    33% {
+        content: "Desi|"
+    }
+
+    36% {
+        content: "Design|"
+    }
+
+    39% {
+        content: "Design|"
+    }
+
+    41% {
+        content: "Designe|"
+    }
+
+    43% {
+        content: "Designer|"
+    }
+
+    46% {
+        content: "F|"
+    }
+
+    49% {
+        content: "Fr|"
+    }
+
+    52% {
+        content: "Fre|"
+    }
+
+    55% {
+        content: "Free|"
+    }
+
+    58% {
+        content: "Freel|"
+    }
+
+    61% {
+        content: "Freela|"
+    }
+
+    64% {
+        content: "Freelan|"
+    }
+
+    67% {
+        content: "Freelanc|"
+    }
+
+    70% {
+        content: "Freelance|"
+    }
+
+    73% {
+        content: "Freelancer|"
+    }
+
+    76% {
+        content: "P|"
+    }
+
+    79% {
+        content: "Ph|"
+    }
+
+    82% {
+        content: "Pho|"
+    }
+
+    85% {
+        content: "Phot|"
+    }
+
+    88% {
+        content: "Photo|"
+    }
+
+    91% {
+        content: "Photog|"
+    }
+
+    93% {
+        content: "Photogr|"
+    }
+
+    95% {
+        content: "Photogra|"
+    }
+
+    96% {
+        content: "Photograp|"
+    }
+
+    97% {
+        content: "Photograph|"
+    }
+
+    98% {
+        content: "Photographe|"
+    }
+
+    99% {
+        content: "Photographer|"
+    }
+}
+
+/* end of header */
+
+#about h2 {
+    position: relative;
+}
+
+#about h2::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: 10px;
+}
+
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.info h1 {
+    font-size: 4.5rem;
+    line-height: 6rem;
+}
+
+.info span {
+    font-size: 3rem;
+}
+
+/* end of about */
+
+#services h2 {
+    font-size: 3rem;
+    color: black;
+}
+
+
+
+#services i {
+    border: 0.6rem solid #0078ff;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    font-size: 40px;
+    color: black;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+
+#services .col-md-4:hover i {
+    border: 0.6rem solid #5ba4f7;
+    background-color: #0078ff;
+    color: white;
+
+}
+
+/* end of services */
+
+.section-work {
+    background-image: url(./img/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    width: 100%;
+    position: relative;
+}
+
+.section-work .container {
+    position: relative;
+    top: 30%;
+    color: #fff;
+}
+
+.section-work .container i {
+    border: 0.5rem solid white;
+    opacity: 0.7;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.section-work .overlay {
+    position: absolute;
+    background-color: #0078ff;
+    opacity: .7;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+/* end of section-work */
+
+#work h2 {
+    font-size: 3rem;
+}
+
+#work span {
+    color: #0078ff;
+}
+
+#work .card-body p:last-child {
+    font-size: 0.8rem;
+}
+
+#work i {
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    color: #0078ff;
+    padding-top: 1rem;
+}
+
+#work .card img {
+    z-index: 0;
+    transition: all 0.7s ease-out;
+}
+
+#work .card:hover img {
+    transform: scale(1.3);
+
+}
+
+/* end of work */
+
+
+#testimon {
+    background-image: url(./img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    padding: 8rem 0;
+    position: relative;
+}
+
+.btn-test {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+}
+
+#testimon .overlay {
+    position: absolute;
+    top: 0;
+    background-color: #0078ff;
+    opacity: .7;
+    width: 100%;
+    height: 600px;
+}
+
+
+.carousel-indicators button {
+    padding-top: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+/* end of testimon */
+
+
+
+#blog h2 {
+    font-size: 3rem;
+}
+
+#blog .poster img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#blog .poster span {
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#blog .poster:hover span {
+    color: #0078ff;
+}
+
+#blog h4 {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#blog h4:hover {
+    color: #0078ff;
+
+}
+
+/* end of blog */
+
+
+#contact {
+    background-image: url(./img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    padding: 8rem 0;
+}
+
+#contact .overlay {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: #0078ff;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+#contact .contact-text p {
+    font-size: 1.3rem;
+}
+
+#contact .icon-list i {
+    color: #0078ff;
+}
+
+#contact h2::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    top: 90px;
+}
+
+.contact-icon {
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+    border: 3.5px solid #5ba4f7;
+    background-color: #0078ff;
+}
+
+.contact-icon:hover i {
+    color: #fff;
+}
+
+#contact button {
+    background-color: #0078ff;
+    border: 1px solid transparent;
+    padding: 10px 24px;
+}
+
+/* end of contact */
+
+
+footer {
+    background-color: #0078ff;
+}
